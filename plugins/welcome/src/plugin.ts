@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
+import WelcomePageComponent from './components/WelcomePage';
 import {
   createPlugin,
   createRoutableExtension,
   createRouteRef,
-} from '@backstage/core';
-import WelcomePageComponent from './components/WelcomePage';
+} from '@backstage/core-plugin-api';
 
 export const rootRouteRef = createRouteRef({
   title: 'Welcome',

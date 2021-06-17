@@ -14,11 +14,6 @@
  * limitations under the License.
  */
 
-import {
-  createPlugin,
-  createApiFactory,
-  createRoutableExtension,
-} from '@backstage/core';
 import ProfileCatalog from './components/ProfileCatalog';
 import ClusterPage from './components/ClusterPage';
 import ClusterList from './components/ClusterList';
@@ -28,6 +23,11 @@ import {
   gitOpsClusterCreateRoute,
 } from './routes';
 import { gitOpsApiRef, GitOpsRestApi } from './api';
+import {
+  createPlugin,
+  createApiFactory,
+  createRoutableExtension,
+} from '@backstage/core-plugin-api';
 
 export const gitopsProfilesPlugin = createPlugin({
   id: 'gitops-profiles',

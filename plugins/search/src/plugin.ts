@@ -13,6 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+import { SearchClient, searchApiRef } from './apis';
 import {
   createApiFactory,
   createPlugin,
@@ -20,8 +21,7 @@ import {
   createRoutableExtension,
   discoveryApiRef,
   createComponentExtension,
-} from '@backstage/core';
-import { SearchClient, searchApiRef } from './apis';
+} from '@backstage/core-plugin-api';
 
 export const rootRouteRef = createRouteRef({
   path: '/search',

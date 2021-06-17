@@ -15,16 +15,16 @@
  */
 
 import { ApiEntity } from '@backstage/catalog-model';
+import { defaultDefinitionWidgets } from './components/ApiDefinitionCard';
+import { ApiExplorerPage as Page } from './components/ApiExplorerPage/ApiExplorerPage';
+import { apiDocsConfigRef } from './config';
+import { createComponentRouteRef, rootRoute } from './routes';
 import {
   createApiFactory,
   createComponentExtension,
   createPlugin,
   createRoutableExtension,
-} from '@backstage/core';
-import { defaultDefinitionWidgets } from './components/ApiDefinitionCard';
-import { ApiExplorerPage as Page } from './components/ApiExplorerPage/ApiExplorerPage';
-import { apiDocsConfigRef } from './config';
-import { createComponentRouteRef, rootRoute } from './routes';
+} from '@backstage/core-plugin-api';
 
 export const apiDocsPlugin = createPlugin({
   id: 'api-docs',

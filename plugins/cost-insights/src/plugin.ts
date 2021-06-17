@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
+import { CostInsightsPage as CostInsightsPageComponent } from './components/CostInsightsPage';
+import { ProjectGrowthInstructionsPage as ProjectGrowthInstructionsPageComponent } from './components/ProjectGrowthInstructionsPage';
+import { LabelDataflowInstructionsPage as LabelDataflowInstructionsPageComponent } from './components/LabelDataflowInstructionsPage';
 import {
   createPlugin,
   createRouteRef,
   createRoutableExtension,
-} from '@backstage/core';
-import { CostInsightsPage as CostInsightsPageComponent } from './components/CostInsightsPage';
-import { ProjectGrowthInstructionsPage as ProjectGrowthInstructionsPageComponent } from './components/ProjectGrowthInstructionsPage';
-import { LabelDataflowInstructionsPage as LabelDataflowInstructionsPageComponent } from './components/LabelDataflowInstructionsPage';
+} from '@backstage/core-plugin-api';
 
 export const rootRouteRef = createRouteRef({
   path: '/cost-insights',
