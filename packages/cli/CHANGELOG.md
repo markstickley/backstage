@@ -1,5 +1,12 @@
 # @backstage/cli
 
+## 0.7.2
+
+### Patch Changes
+
+- e3d31b381: Make the `create-github-app` command disable webhooks by default.
+- ece2b5dd1: chore: bump `@spotify/eslint-config-typescript` from 9.0.0 to 10.0.0
+
 ## 0.7.1
 
 ### Patch Changes
